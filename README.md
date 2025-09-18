@@ -10,7 +10,7 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 
 # Coruse Content:
 
-* [Beginner](Beginner/01/)
+* [Day 1: Working with variables, input, output](Beginner/01/)
 
 
 
