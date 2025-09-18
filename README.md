@@ -8,6 +8,10 @@ Thank you!
 
 This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906)'s Python notes repository. I found the file structure to be very convenient. However, the notes and projects are all built by me. I will additionally add any important features that I find is required.
 
-# Coruse Projects:
+# Coruse Content:
+
+* [Beginner](Beginner/01/)
 
 
+
+# Course Main Projects:
