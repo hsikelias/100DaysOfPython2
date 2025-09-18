@@ -10,9 +10,9 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 
 # Coruse Content:
 
-* [Day 1: Working with variables, input, output](Beginner/01/)
-* [Day 2: Data Types,roundings,f-strings,string Manipulation](Beginner/02/)
-* [Day 3: Control flow and logical operators](Beginner/03/)
+* [Day 1: Working with Variables, Input, Output](Beginner/01/)
+* [Day 2: Data Types, Roundings, F-strings, String Manipulation](Beginner/02/)
+* [Day 3: Control Flow and Logical Operators](Beginner/03/)
 
 
 # Course Main Projects:
