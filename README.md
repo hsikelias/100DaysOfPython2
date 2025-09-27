@@ -13,6 +13,7 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 1: Working with Variables, Input, Output](Beginner/01/)
 * [Day 2: Data Types, Roundings, F-strings, String Manipulation](Beginner/02/)
 * [Day 3: Conditional Statements: if else](Beginner/03/)
+* [Day 4: ](Beginner/04/)
 
 
 # Course Main Projects:
