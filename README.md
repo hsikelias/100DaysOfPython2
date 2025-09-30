@@ -15,6 +15,7 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 3: Conditional Statements: if else](Beginner/03/)
 * [Day 4: Random Module, Lists, Index Error, Nested Lists](Beginner/04/)
 * [Day 5: For loops,range ](Beginner/05/)
+* [Day 6: Functions, Code Blocks and While Loops](Beginner/06)
 
 
 # Course Main Projects:
