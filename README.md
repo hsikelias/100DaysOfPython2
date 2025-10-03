@@ -16,6 +16,6 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 4: Random Module, Lists, Index Error, Nested Lists](Beginner/04/)
 * [Day 5: For loops,range ](Beginner/05/)
 * [Day 6: Functions, Code Blocks and While Loops](Beginner/06)
-
+* [Day 7: Hangman game: for and while loops, if else, lists, modules](Beginner/07)
 
 # Course Main Projects:
