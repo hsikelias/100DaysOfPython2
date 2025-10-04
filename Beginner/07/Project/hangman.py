@@ -127,7 +127,7 @@ words = [
 ]
 
 
-lives = 9
+lives = 7
 random_word = random.choice(words)
 blank_word = ["_" for _ in random_word]
 
@@ -135,23 +135,16 @@ blank_word = ["_" for _ in random_word]
 print(logo)
 
 print("Welcome to Hangman! Below is your word, start guessing letters!!")
+
 print(blank_word)
+print(random_word)
 
 # assuming the word is wizard
 
-while lives > 0 and "_" in blank_word:   # checks if lives are left and if there are still blanks
-    guess = input("Enter your letter guess:").lower()  # takes input from the letter
-    
+while lives > 0:   # checks if lives are left and if there are still blanks
+
+  guess = input("Enter your letter guess:").lower()  # takes input from the letter, #assume user enters "a", a is in 
 	# now i need to check if the letter is in the word
-    if guess in random_word: # checks if the guessed letter in the picked word
-        # now i need to identify the correc index of the letter
-        for position in range(len(random_word)): # finding the length of the word
-            letter = random_word[position] # since we have the position now i can find the letter 
-	    if letter == guess:
-			blank_word[position] = letter # now i can replae the blank with the letter
-
-            
-	    
-
-	
-
+  if guess in random_word: 
+    # guess is a and a is infact in wizard and its at 4
+    print

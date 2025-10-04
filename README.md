@@ -8,7 +8,7 @@ Thank you!
 
 This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906)'s Python notes repository. I found the file structure to be very convenient. However, the notes and projects are all built by me. I will additionally add any important features that I find is required.
 
-# Coruse Content:
+# Course Content:
 
 * [Day 1: Working with Variables, Input, Output](Beginner/01/)
 * [Day 2: Data Types, Roundings, F-strings, String Manipulation](Beginner/02/)
@@ -16,6 +16,6 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 4: Random Module, Lists, Index Error, Nested Lists](Beginner/04/)
 * [Day 5: For loops,range ](Beginner/05/)
 * [Day 6: Functions, Code Blocks and While Loops](Beginner/06)
-* [Day 7: Hangman game: for and while loops, if else, lists, modules](Beginner/07)
+
 
 # Course Main Projects:
