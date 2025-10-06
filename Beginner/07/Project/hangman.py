@@ -127,24 +127,26 @@ words = [
 ]
 
 
-lives = 7
-random_word = random.choice(words)
-blank_word = ["_" for _ in random_word]
+lives = 8
+chosen_word = random.choice(words)
+blank_word = ["_" for _ in chosen_word]
 
 
 print(logo)
 
-print("Welcome to Hangman! Below is your word, start guessing letters!!")
+print("Welcome to Hangman! Below is your word, start guessing letters!!\n")
 
 print(blank_word)
-print(random_word)
+print("\n")
+print(chosen_word)    # REMOVE THIS LATER, RN ITS JUST HERE FOR DEBUGGING
 
-# assuming the word is wizard
+print(symbol[lives])
+guess = input("Enter your letter guess:").lower()
 
-while lives > 0:   # checks if lives are left and if there are still blanks
-
-  guess = input("Enter your letter guess:").lower()  # takes input from the letter, #assume user enters "a", a is in 
-	# now i need to check if the letter is in the word
-  if guess in random_word: 
-    # guess is a and a is infact in wizard and its at 4
-    print
+while lives > 0:
+	for letter in chosen_word:
+		if letter == guess: 
+            print('Nice guess!')
+        else:
+            lives -= 1
+            print(symbol[lives])
