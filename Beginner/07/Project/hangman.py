@@ -1,165 +1,35 @@
 import random
 
-logo = '''
-_                                             
-| |                                            
-| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
-| '_ \\ / _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\ 
-| | | | (_| | | | | (_| | | | | | | (_| | | | |
-|_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
-                    __/ |                      
-                  |___/                       
-'''
-symbol = [
-'''
-        ------
-	|   | 
-	|    
-	|  
-	|    
-	|  
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  
-	|    
-	|  
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|   |
-	|   
-	|   
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  /|
-	|    
-	|  
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  /|\\
-	|    
-	|   
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  /|\\
-	|   | 
-	|  
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  /|\\
-	|   | 
-	|  /
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|   O 
-	|  /|\\
-	|   | 
-	|  / \\
-	| 
-	--------- 
-''',
-'''
-        ------
-	|   | 
-	|    
-	|  
-	|            O
-	|           /|\\
-	|            |
-	---------   / \\
-'''
-]
+word_list = ["aardvark", "baboon", "camel"]
+pickedWord = random.choice(word_list)
+lives = 7
+print(pickedWord)
 
-words = [
-    "python",
-    "elephant",
-    "bicycle",
-    "astronaut",
-    "computer",
-    "pizza",
-    "kangaroo",
-    "umbrella",
-    "mountain",
-    "library",
-    "diamond",
-    "volcano",
-    "sandwich",
-    "giraffe",
-    "rainbow",
-    "suitcase",
-    "dolphin",
-    "pancake",
-    "wizard",
-    "galaxy"
-]
+hiddenWord = "_"*len(pickedWord) # lesgo we got the words replaced to _
+hiddenList = list(hiddenWord)  # converting the hidden word, whichs in a string to a list. we do this cus lists makes it easier to update blanks and more control basically.
+
+print("Welcome to hangman!")
+print("Below is your hidden word, start guessing, one letter at a time!")
+print(hiddenWord) 
+print(hiddenList)  
+
+while lives >0 and "_"  in hiddenList:
+  guess = input("Guess a letter: ")
+  if guess in pickedWord:
+    enumerate(pickedWord)
+    print("Your guessed letter is correct!")
+  elif guess == hiddenList:
+    print("Entered guess is already guessed, try a new letter!")
+  elif guess != hiddenList:
+    print("Wrong guess")
+  else:
+    print("You entered "+ guess+",you might've entered a number, please enter only one letter!")
+
+# need to convert the hidden word variable to list. 
+# so with this i get the position of the letter but in the case of the multiple characters it doesnt give out every single character. like in baboon.. if i say b it doesnt give out 0,2.. only 0.
+# so this method is really awful because i want the user to get all the existing letters.
 
 
-lives = 8
-chosen_word = random.choice(words)
-blank_word = ["_" for _ in chosen_word]
-gussed_letters = []
+    print(hiddenList)
+  
 
-
-print(logo)
-print("Welcome to Hangman! Below is your word, start guessing letters!\n")
-
-while lives > 0:
-    print(" ".join(blank_word))
-    print(symbol[8 - lives]) 
-
-    guess = input("\nEnter a letter: ").lower()
-
-    if guess in gussed_letters:
-        print("You already guessed that letter.")
-        continue
-    gussed_letters.append(guess)
-
-    if guess in chosen_word:
-        for i, letter in enumerate(chosen_word):
-            if letter == guess:
-                blank_word[i] = guess
-        print("Nice guess!")
-    else:
-        lives -= 1
-        print("Wrong guess!")
-    
-    if "_" not in blank_word:
-        print(f"\nYou won! The word was '{chosen_word}' indeed.")
-        break
-
-else:
-    print(symbol[-1])
-    print(f"\n You lost! The word was '{chosen_word}'.")
