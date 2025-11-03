@@ -8,6 +8,10 @@ Thank you!
 
 This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906)'s Python notes repository. I found the file structure to be very convenient. However, the notes and projects are all built by me. I will additionally add any important features that I find is required.
 
+# BroCode Python Course
+* [Main Notes](AdditionalPractice/BroCode/Notes.md)
+  * [Day 1:](AdditionalPractice/BroCode/01)
+
 # Course Content:
 
 * [Day 1: Working with Variables, Input, Output](Beginner/01/)
@@ -17,7 +21,7 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 5: For loops,range ](Beginner/05/)
 * [Day 6: Functions, Code Blocks and While Loops](Beginner/06)
 * [Day 7: Hangman Game](Beginner/07)
-* [Day 8: Input Functions(Arguments/Parameters), Ceaser Cipher ](Beginner/08)
+* [Day 8: Input Functions(Arguments/Parameters), Cesar Cipher ](Beginner/08)
 * [Day 9: Dictionaries,Nesting,Bidding Game](Beginner/09)
 
 # Course Main Projects:
