@@ -157,3 +157,10 @@ else:
   print("You must be 18+ to sign up")
 
 ```
+
+Only if is false the program starts checking for the next statements or else it ends there. Make sure you indent properly because you might not want some statements to be running in a if statement. 
+
+If there are some exceptions or multiple scenarios in your problem, you can use **elif** statements. 
+
+
+**Logical Operators**
