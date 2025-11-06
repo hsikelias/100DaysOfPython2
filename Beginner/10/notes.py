@@ -90,10 +90,6 @@ print(output)
 
 ## we usually think of return statements as things that show up at the end of a certain function. But what if we have multiple return statement??
 
-
-
-
-
 # Docstrings: A way for us to create bits of documentation while we code our functions. Like for len() if we hoover over that function we get a documentation pop up that explains what the function does. To do the same thing for our functions is called Docstrings
 
 # the doctsrings go under the first indented line and whatever u say should go between """ """
