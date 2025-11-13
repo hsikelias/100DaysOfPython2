@@ -1,11 +1,14 @@
 from art import logo
-choice = "y"
 print(logo)
 
 # program starts with asking the user first number and then displays bunch of operations( +, -, *, /). Then it asks for user to enter the operation.
 # Then the program asks user for another number. After entering the number the program pritns the caluclation and answer. 
 # Then a new prompt which asks y to save the previous answer for next caluclation or n for starting a new caluclation. 
 def mainCalc (fNum, opr, sNum):
+
+  answer = None
+  choice = "y"
+
   if opr == "+":
     answer = fNum + sNum
   elif opr == "-":
@@ -18,12 +21,13 @@ def mainCalc (fNum, opr, sNum):
     print("Make sure you entered valid operations!")
 
   print(answer)
-
   option = input("Do you want to continue? y for yes and n for no: ")
-  if option == "y":
-    answer = firstNum
+  if option .lower( )== "y":
+    fNum = answer
   else:
     choice = "n"
+
+  return answer, choice
 
 
 
@@ -35,6 +39,6 @@ mainCalc(firstNum,operation,secondNum)
 while choice == "y":
   operation = input(f"Choose one: \n + \n - \n * \n / \n")
   secondNum = int(input("Now enter your second number: "))
-  mainCalc(firstNum,operation,secondNum)
+  firstNum, choice = mainCalc(firstNum,operation,secondNum)
 
 
