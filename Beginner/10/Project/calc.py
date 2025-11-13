@@ -4,7 +4,7 @@ print(logo)
 
 def mainCalc (fNum, sNum,opr):  
     """
-    This function does the job of doing the user selecter operation. 
+    This function does the job of completing the selected operation and then have a loop that reuses the first num value to repeat the first number.  
     """ 
     
     if opr == "+":
@@ -19,7 +19,15 @@ def mainCalc (fNum, sNum,opr):
         print("Print given operations")
     # completes first iternation
     print(f"Your answer is {answer}")
+
+    print("Do you want to continue the game?\n")
+    continueOrNot = input("Type 'y' if you want to continue and 'n' if you want to exit. ")
+    if continueOrNot == "y":
+        print("Alright lets do this again..")
+    else:
+        exit()
     return answer
+    
 
 def secondMainCalc (fNum, sNum,opr,choice):
     print("test")
