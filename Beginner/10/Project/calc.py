@@ -1,44 +1,40 @@
 from art import logo
 print(logo)
 
-# program starts with asking the user first number and then displays bunch of operations( +, -, *, /). Then it asks for user to enter the operation.
-# Then the program asks user for another number. After entering the number the program pritns the caluclation and answer. 
-# Then a new prompt which asks y to save the previous answer for next caluclation or n for starting a new caluclation. 
-def mainCalc (fNum, opr, sNum):
 
-  answer = None
-  choice = "y"
+def mainCalc (fNum, sNum,opr):  
+    """
+    This function does the job of doing the user selecter operation. 
+    """ 
+    
+    if opr == "+":
+        answer = fNum + sNum
+    elif opr == "-":
+        answer = fNum - sNum
+    elif opr == "*":
+        answer = fNum * sNum
+    elif opr == "/":
+        answer = fNum / sNum
+    else:
+        print("Print given operations")
+    # completes first iternation
+    print(f"Your answer is {answer}")
+    return answer
 
-  if opr == "+":
-    answer = fNum + sNum
-  elif opr == "-":
-    answer = fNum - sNum
-  elif opr == "*":
-    answer = fNum * sNum
-  elif opr == "/":
-    answer = fNum / sNum
-  else:
-    print("Make sure you entered valid operations!")
-
-  print(answer)
-  option = input("Do you want to continue? y for yes and n for no: ")
-  if option .lower( )== "y":
-    fNum = answer
-  else:
-    choice = "n"
-
-  return answer, choice
+def secondMainCalc (fNum, sNum,opr,choice):
+    print("test")
 
 
 
-firstNum = int(input("Enter your first number: "))
-operation = input(f"Choose one: \n + \n - \n * \n / \n")
-secondNum = int(input("Now enter your second number: "))
-mainCalc(firstNum,operation,secondNum)
+firstNum = int(input("Please enter your first number: "))
+print("+ \n- \n* \n/ \n")
+operation =input("Now, please enter the operation you want to do: ")
+secondNum = int(input("Please enter your second number: "))
 
-while choice == "y":
-  operation = input(f"Choose one: \n + \n - \n * \n / \n")
-  secondNum = int(input("Now enter your second number: "))
-  firstNum, choice = mainCalc(firstNum,operation,secondNum)
+mainCalc(firstNum,secondNum,operation)
+# atp user will get the answer and its time to ask if they want to continue
 
-
+print("Do you want to continue the game?\n")
+continueOrNot = input("Type 'y' if you want to continue and 'n' if you want to exit. ")
+if continueOrNot == "y":
+    choice = continueOrNot
