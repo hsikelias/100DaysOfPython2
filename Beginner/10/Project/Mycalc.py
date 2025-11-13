@@ -18,10 +18,9 @@ def mainCalc (fNum, sNum,opr,choice):
             answer = fNum / sNum
         else:
             print(f"Enter only provided operations, you responded {opr}")
+        print(f"{fNum} {opr} {sNum} = {answer}\n")
 
-        print(f"Your answer is {answer}")
-
-        print("Do you want to continue the game?\n")
+        print("Do you want to continue the game?")
         continueOrNot = input("Type 'y' if you want to continue and 'n' if you want to exit. ").lower()
 
         if continueOrNot == "y":
@@ -44,3 +43,8 @@ secondNum = int(input("Please enter your second number: "))
 
 mainCalc(firstNum,secondNum,operation,choice)
 
+
+
+# HOW DOES MY PROGRAM WORK: 
+
+#
