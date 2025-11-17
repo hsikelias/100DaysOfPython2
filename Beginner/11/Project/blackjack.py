@@ -18,6 +18,8 @@ list of my cards
 orginal cards
 showing computers card
 computer wont stop until u bust
+
+important website: https://appbrewery.github.io/python-day11-demo/
 '''
 # import necessary libraries
 
@@ -27,6 +29,6 @@ from art import logo
 def clearScreen():
     print("\n"*100)
     print(logo)
-    
+
 print("hello world")
 clearScreen()
