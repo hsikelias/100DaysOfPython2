@@ -25,7 +25,7 @@ def shuffle_computer_deck():
     print(f"Computer's first card is: {computer_deck[0]}")
     return computer_deck
 
-def total_cards_sum(userCards):
+def total_cards_sum(userCards): 
     """
     Does the job of finding sums of the users cards. 
     Adjusts Ace (11) to 1 if sum goes above 21.
