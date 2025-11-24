@@ -8,9 +8,6 @@ Thank you!
 
 This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906)'s Python notes repository. I found the file structure to be very convenient. However, the notes and projects are all built by me. I will additionally add any important features that I find is required.
 
-# BroCode Python Course
-* [Main Notes](AdditionalPractice/BroCode/Notes.md)
-  * [Day 1:](AdditionalPractice/BroCode/01)
 
 # Course Content:
 
@@ -30,3 +27,4 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 14: ](Beginner/14)
 
 # Course Main Projects:
+
