@@ -9,7 +9,7 @@ Thank you!
 This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906)'s Python notes repository. I found the file structure to be very convenient. However, the notes and projects are all built by me. I will additionally add any important features that I find is required.
 
 
-# Course Content:
+## Course Content:
 
 * [Day 1: Working with Variables, Input, Output](Beginner/01/)
 * [Day 2: Data Types, Roundings, F-strings, String Manipulation](Beginner/02/)
@@ -22,9 +22,13 @@ This repository is inspired by [@Matthew1906](https://www.github.com/Matthew1906
 * [Day 9: Dictionaries,Nesting,Bidding Game](Beginner/09)
 * [Day 10:Functions with Outputs,Docstrings,Recursion, Dictionary with functions](Beginner/09)
 * [Day 11:Black Jack Game, ](Beginner/11)
-* [Day 12: ](Beginner/12)
+* [Day 12:Number Guessing Project, Scope](Beginner/12)
 * [Day 13: ](Beginner/13)
 * [Day 14: ](Beginner/14)
 
-# Course Main Projects:
+
+## Practice Stuff:
+While following the course, I also did my external practice to build my pattern recognition and really get comfortable with python. All those exercise files are under [Additional Practice](AdditionalPractice/Old%20Practices/) and [WorkSheets](AdditionalPractice/Worksheets/). It's really very random but I just wanted to throw it in here :)
+
+## Course Main Projects:
 
